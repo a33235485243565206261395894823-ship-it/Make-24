@@ -76,6 +76,9 @@ When using Jokers (wild cards), solutions show which values were assigned:
 **Format:** `W(x)` indicates the wild card was set to that value
 **Example:** `w(1)` indicates the wild card is an Ace
 
+**Format in Solver when there are 3 Jokers**: `Wild cards set to: [x], [x], [x]`
+**Example**: `Wild cards set to: 3, 8, 8`
+
 ### Computation Time
 In Solver mode, computation time is displayed in milliseconds (ms):
 ```
@@ -122,8 +125,9 @@ W(3) * (4 * (W(1) + 1)) = 24
 The first wild card is assigned a 1 while the second is a 3
 **Triple**
 ```
-hello world
+((1 + 3) * 8) - 8 = 24 = 24
 ```
+These equations come from a precomputed list because there is a large amount, this is only one solution
 **All**
 ```
 1 * 2 * 3 * 4 = 24 = 24
